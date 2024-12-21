@@ -5,7 +5,7 @@ categories: [교육, 소개]
 tags: [화이트햇스쿨, 보안, 교육소개]
 description: "화이트햇 스쿨 3기의 교육 과정, 선발 절차, 혜택 및 프로그램의 장점에 대해 상세히 소개합니다."
 author: yeony
-image: /assets/img/whs_3rd_intro.png
+image: /assets/img/whs_bi_image.png
 math: false
 mermaid: false
 ---
