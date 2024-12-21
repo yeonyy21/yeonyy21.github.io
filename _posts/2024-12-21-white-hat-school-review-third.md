@@ -105,7 +105,7 @@ mermaid: false
 
 ## **선발 절차 및 일정**
 
-![화이트햇 스쿨 3기 제출서류](assets/img/whs_submit_paper.png)
+![화이트햇 스쿨 3기 제출서류](assets/img/whs_3rd_submit_paper.png)
 
 ### **제출 서류**
 1. **지원서**
@@ -116,7 +116,7 @@ mermaid: false
 
 ### **선발 절차**
 
-![화이트햇 스쿨 3기 모집일정](assets/img/whs_stage_sunbal.png)
+![화이트햇 스쿨 3기 모집일정](assets/img/whs_3rd_stage_sunbal.png)
 
 1. **온라인 서류 접수**
    - **기간**: 2025년 1월 2일 (목) ~ 2025년 1월 27일 (월) 오후 5시까지
