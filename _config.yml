@@ -216,9 +216,6 @@ exclude:
   - rollup.config.js
   - "package*.json"
 
-plugins:
-  - jekyll-feed
-
 
 jekyll-archives:
   enabled: [categories, tags]
