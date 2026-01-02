@@ -1,171 +1,92 @@
 # The Site Configuration
+# ======================
 
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
-lang: en
+# Language & Timezone
+lang: ko
+timezone: Asia/Seoul
 
-# Change to your timezone › https://zones.arilyn.cc
-timezone: Asia/Shanghai
+# ======================
+# SEO 기본 설정
+# ======================
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
+title: 머신러닝 교안 블로그
+tagline: 초보자를 위한 머신러닝 & AI
+description: >-
+  머신러닝과 인공지능을 처음 배우는 사람을 위한
+  쉽고 체계적인 머신러닝 교안 블로그입니다.
 
-title: Chirpy # the main title
-
-tagline: A text-focused Jekyll theme # it will display as the subtitle
-
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
-
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
-
-github:
-  username: github_username # change to your GitHub username
-
-twitter:
-  username: twitter_username # change to your Twitter username
-
-social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
-  fediverse_handle: "@you@domain.com" # change to your fediverse handle or leave empty
-  links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
-
-# Site Verification Settings
-webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
-
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
-
-# Web Analytics Settings
-analytics:
-  google:
-    id: # fill in your Google Analytics ID
-  goatcounter:
-    id: # fill in your GoatCounter ID
-  umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
-  matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
-  cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
-  fathom:
-    id: # fill in your Fathom Site ID
-
-# Page views settings
-pageviews:
-  provider: # now only supports 'goatcounter'
-
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light — Use the light color scheme
-#     dark — Use the dark color scheme
-#
-theme_mode: # [light | dark]
-
-# The CDN endpoint for media resources.
-# Notice that once it is assigned, the CDN url
-# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
-
-# the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
-
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
-
-# boolean type, the global switch for TOC in posts.
-toc: true
-
-comments:
-  # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
-  disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
-  utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
-  giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
-
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
-assets:
-  self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
-
-pwa:
-  enabled: true # The option for PWA feature (installable)
-  cache:
-    enabled: true # The option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
-    deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
-
-paginate: 10
-
-# The base URL of your site
+# 블로그 주소 (⚠️ 반드시 본인 주소)
+url: "https://yeonyy21.github.io"
 baseurl: ""
 
-# ------------ The following options are not recommended to be modified ------------------
+# ======================
+# 작성자 / 소셜 정보
+# ======================
 
-kramdown:
-  footnote_backlink: "&#8617;&#xfe0e;"
-  syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: highlight
-    # default_lang: console
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+github:
+  username: yeonyy21
+
+social:
+  name: yeonyy21
+  email: your@email.com
+  links:
+    - https://github.com/yeonyy21
+
+# ======================
+# 검색엔진 인증 (2단계에서 사용)
+# 지금은 비워둬도 OK
+# ======================
+
+webmaster_verifications:
+  google:
+  bing:
+  baidu:
+
+# ======================
+# 방문자 통계 (나중에 설정)
+# ======================
+
+analytics:
+  google:
+    id:
+
+# ======================
+# 테마 UI 설정
+# ======================
+
+theme_mode: # light | dark | 비워두면 시스템 설정 따름
+
+cdn: "https://chirpy-img.netlify.app"
+
+# 사이드바 아바타 (없으면 주석 처리)
+# avatar: "/assets/img/avatar.png"
+
+toc: true
+
+# ======================
+# 댓글 (지금은 비활성)
+# ======================
+
+comments:
+  provider:
+
+# ======================
+# PWA (모바일 설치 가능)
+# ======================
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+
+# ======================
+# 글 설정
+# ======================
+
+paginate: 10
 
 collections:
   tabs:
@@ -174,37 +95,27 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: ""
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
-      permalink: /posts/:title/
-  - scope:
-      path: _drafts
-    values:
+      toc: true
       comments: false
-  - scope:
-      path: ""
-      type: tabs # see `site.collections`
-    values:
-      layout: page
-      permalink: /:title/
+      permalink: /posts/:title/
 
-sass:
-  style: compressed
+# ======================
+# 마크다운 / 코드 하이라이트
+# ======================
 
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
-  ignore:
-    envs: [development]
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# ======================
+# 빌드 제외 파일
+# ======================
 
 exclude:
   - "*.gem"
@@ -213,9 +124,12 @@ exclude:
   - tools
   - README.md
   - LICENSE
-  - purgecss.js
-  - "*.config.js"
+  - "node_modules"
   - "package*.json"
+
+# ======================
+# 카테고리 / 태그 아카이브
+# ======================
 
 jekyll-archives:
   enabled: [categories, tags]
@@ -223,5 +137,5 @@ jekyll-archives:
     category: category
     tag: tag
   permalinks:
-    tag: /tags/:name/
     category: /categories/:name/
+    tag: /tags/:name/
